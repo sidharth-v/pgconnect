@@ -1,7 +1,7 @@
 app:
     name: PGConnect
     code: PGCONNECT
-    notify: skumar@ecloudcontrol.com
+    notify: appz@ecloudcontrol.com
 
 build:
     version: 0.2
@@ -11,7 +11,7 @@ build:
     image_template: pgconnect-0.2
 
 deploy:
-    context: skumarpi/DEV
+    context: alpha/DEV
     ingress: None
     replicas: 2
     port:
@@ -21,7 +21,7 @@ deploy:
 
   
 properties:
-    POSTGRES_PRIMARY: postgres13-ha-replica-13-x-1.postgres13-ha-replica-13-x:5432
-    POSTGRES_SECONDARY: postgres13-ha-replica-13-x-2.postgres13-ha-replica-13-x:5432
+    POSTGRES_PRIMARY: postgres-ha-13-x-1.postgres-ha-13-x:5432
+    POSTGRES_SECONDARY: postgres-ha-13-x-2.postgres-ha-13-x:5432
     revision : 36
 
