@@ -26,5 +26,5 @@ properties:
     #POSTGRES_03:
     #POSTGRES_04:
     #POSTGRES_05:
-    revision : 39
+    revision : 40
 
